@@ -2,7 +2,7 @@
 Primitive : 
             7 Types : String, Number, Boolean, null, undefined, Symbol, BigInt
         
-Reference (Non-primitive) : 
+Reference (Non-Primitive) : 
                             Array, Objects, Functions
 */
 
@@ -21,3 +21,26 @@ let myObj = {                   // Object defined
 const myFunction = function(){
     console.log("Hello World");
 }
+
+
+/*----------------------------------------Memory----------------------------------------*/
+
+// Stack (Primitive) : Takes the copy of the variable
+// Heap (Non-Primitive) : Takes the original value (Reference)
+
+let myName = "Priyank"
+let yourName = myName  // Takes the copy of the original - Primitive
+yourName = "KK"
+
+console.log(myName)
+console.log(yourName)
+
+let userOne = {
+    email : "user1@g.com",
+    age : 22
+}
+let userTwo = userOne  // Takes the original reference
+userTwo.email = "user2@g.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
