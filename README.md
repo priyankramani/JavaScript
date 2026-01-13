@@ -1,2 +1,3 @@
 # JavaScript
-A repo for js
+
+## A Repository of learning JavaScript
